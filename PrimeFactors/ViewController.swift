@@ -1,25 +1,20 @@
-//
-//  ViewController.swift
-//  PrimeFactors
-//
-//  Created by Justin Holzmann on 6/3/16.
-//  Copyright © 2016 Justin Holzmann. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak public var primesInput: UITextField!
+    
+    @IBOutlet weak public var primesLabel: UILabel!
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        primesLabel.text = ""
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction public func generatePrimes() {
+        let userInput = Int(primesInput.text!) ?? 0
+        primesLabel.text = "\(PrimeFactors.generate(userInput))"
+        
     }
-
-
 }
 

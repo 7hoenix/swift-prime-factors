@@ -28,6 +28,9 @@
                                 <rect key="frame" x="20" y="56" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="generatePrimes" destination="BYZ-38-t0r" eventType="editingChanged" id="e9c-Fs-ktC"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is the BEST LABEL EVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERE-RI-LgS">
                                 <rect key="frame" x="20" y="116" width="560" height="151.5"/>
@@ -49,6 +52,10 @@
                             <constraint firstItem="rRu-zq-e8B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vK1-qK-4Ey"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="primesInput" destination="c7b-8J-Y8T" id="zZJ-Vj-6iI"/>
+                        <outlet property="primesLabel" destination="ERE-RI-LgS" id="zkz-NQ-MzJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

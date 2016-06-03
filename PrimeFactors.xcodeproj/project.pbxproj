@@ -13,6 +13,8 @@
 		1397E5391D020B230026547D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1397E5381D020B230026547D /* Assets.xcassets */; };
 		1397E53C1D020B230026547D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1397E53A1D020B230026547D /* LaunchScreen.storyboard */; };
 		1397E5471D020B230026547D /* PrimeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397E5461D020B230026547D /* PrimeFactorsTests.swift */; };
+		1397E5541D0216BD0026547D /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397E5531D0216BD0026547D /* ViewControllerTest.swift */; };
+		1397E5561D021F2F0026547D /* PrimeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397E5551D021F2F0026547D /* PrimeFactors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		1397E5421D020B230026547D /* PrimeFactorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeFactorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1397E5461D020B230026547D /* PrimeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFactorsTests.swift; sourceTree = "<group>"; };
 		1397E5481D020B230026547D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1397E5531D0216BD0026547D /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		1397E5551D021F2F0026547D /* PrimeFactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeFactors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,10 @@
 		1397E5301D020B230026547D /* PrimeFactors */ = {
 			isa = PBXGroup;
 			children = (
-				1397E5311D020B230026547D /* AppDelegate.swift */,
+				1397E5511D0214D20026547D /* SupportingFiles */,
 				1397E5331D020B230026547D /* ViewController.swift */,
 				1397E5351D020B230026547D /* Main.storyboard */,
-				1397E5381D020B230026547D /* Assets.xcassets */,
-				1397E53A1D020B230026547D /* LaunchScreen.storyboard */,
-				1397E53D1D020B230026547D /* Info.plist */,
+				1397E5551D021F2F0026547D /* PrimeFactors.swift */,
 			);
 			path = PrimeFactors;
 			sourceTree = "<group>";
@@ -92,8 +94,20 @@
 			children = (
 				1397E5461D020B230026547D /* PrimeFactorsTests.swift */,
 				1397E5481D020B230026547D /* Info.plist */,
+				1397E5531D0216BD0026547D /* ViewControllerTest.swift */,
 			);
 			path = PrimeFactorsTests;
+			sourceTree = "<group>";
+		};
+		1397E5511D0214D20026547D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1397E5311D020B230026547D /* AppDelegate.swift */,
+				1397E5381D020B230026547D /* Assets.xcassets */,
+				1397E53A1D020B230026547D /* LaunchScreen.storyboard */,
+				1397E53D1D020B230026547D /* Info.plist */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1397E5341D020B230026547D /* ViewController.swift in Sources */,
+				1397E5561D021F2F0026547D /* PrimeFactors.swift in Sources */,
 				1397E5321D020B230026547D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1397E5541D0216BD0026547D /* ViewControllerTest.swift in Sources */,
 				1397E5471D020B230026547D /* PrimeFactorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
